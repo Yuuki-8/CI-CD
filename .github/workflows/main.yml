@@ -8,3 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4.1.1
       - run: echo hello
+      - uses: actions/upload-artifact@v3
+        with:
+          name: my-artifact
+          path: file.txt
